@@ -1,8 +1,8 @@
 
-script=$(realpath $0)
+script=$($0)
 realpath $0
 
-
+exit
 a=10
 
 name=manju

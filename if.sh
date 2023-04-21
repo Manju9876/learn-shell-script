@@ -17,8 +17,9 @@ if [ "${fruit_name}" == "mango" ]
 #    echo the fruit per peace is - 1$
 #  fi
 #
-if [ "$quantity" -gt 100 ]; then
-  echo "the fruit per piece is - 0.50$"
+if [ "$quantity" -gt 100 ]
+then
+  echo the fruit per piece is - 0.50$
 else
-  echo "the fruit per piece is - 1.00$"
+  echo the fruit per piece is - 1.00$
 fi

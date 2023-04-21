@@ -1,8 +1,15 @@
 
-script=$($0)
-realpath $0
+script=$(realpath $0)
+script_path=$(dirname "script")
+source ${script_path}/commong.sh
+
+
+echo this the script_path file ${script_path}
 
 exit
+
+
+
 a=10
 
 name=manju

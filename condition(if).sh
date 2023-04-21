@@ -3,5 +3,5 @@ quantity=10
 
 if [ "${fruit_name}" == "mango"]
  then
-   echo quantity is - 10
+   echo quantity is - ${quantity}
    fi

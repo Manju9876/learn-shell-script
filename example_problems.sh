@@ -7,6 +7,7 @@ input=$1
 if [ -z "$input" ]
 then
   echo input movie name
+  exit
 fi
 percentage=$(curl -s  https://www.themoviedb.org/movie/$input | grep data-percent| xargs -n1 | grep data-percent | awk -F = '{print $2}' | awk -F . '{print $1}')
 

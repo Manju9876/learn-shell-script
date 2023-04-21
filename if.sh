@@ -11,9 +11,8 @@ if [ "${fruit_name}" == "mango" ]
  # always double code the variable
 
 
- if [ "$quantity" -gt 100 ]
-  then
-    echo the fruit per peace is - 15rs
+ if [ "$quantity" -gt 100 ]; then
+    echo the fruit per peace is - 0.5$
   else
-    echo the fruit per peace is - 20rs
+    echo the fruit per peace is - 1$
   fi

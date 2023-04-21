@@ -7,3 +7,13 @@ if [ "${fruit_name}" == "mango" ]
  else
    echo friut does not exist
  fi
+
+ # always double code the variable
+
+
+ if [ "$quantity" -gt 100 ]
+  then
+    echo the fruit per peace is - 15rs
+  else
+    echo the fruit per peace is - 20rs
+  fi

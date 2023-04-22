@@ -12,4 +12,3 @@ func_stat_check(){
 echo -e "\e[31m >>>>>>>>>> installing nginx <<<<<<<<<<<\e[0m"
 yum install nginx >/tmp/roboshop.log
 func_stat_check $?
-

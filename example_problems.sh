@@ -1,7 +1,7 @@
 # Get ratting
 # > 7 - Good
 # < 7 - Average
-
+#
 #input=$1
 #
 #if [ -z "$input" ]
@@ -20,22 +20,38 @@
 #else
 #  echo the movie ratting is Average
 #fi
+#
+##get the ratting
+## > 75 good
+## < 75 average
+#
+#input=$1
+#if [ -z "$input" ]
+#then
+#  echo please provide the movie url
+#fi
+#
+#percent=$(curl -s  https://www.rottentomatoes.com/m/evil_dead_rise | grep -w 86 | xargs -0 -n1 | grep  audiencescore | awk -F = '{print $2}')
+#
+#if [ "$percent" -ge 75 ]
+#then
+#  echo the movie is Good
+#else
+#  echo the movie is Average
+#fi
 
-#get the ratting
-# > 75 good
-# < 75 average
+
+#probelem 02
 
 input=$1
-if [ -z "$input" ]
+if [ -z "${input}" ]
 then
-  echo please provide the movie url
+  echo please provide the input
 fi
-
-percent=$(curl -s  https://www.rottentomatoes.com/m/evil_dead_rise | grep -w 86 | xargs -0 -n1 | grep  audiencescore | awk -F = '{print $2}')
-
-if [ "$percent" -ge 75 ]
+input=$1
+if [ "${input}" -ge 75 ]
 then
-  echo the movie is Good
+  echo the moview ratting is good
 else
-  echo the movie is Average
+  echo the movie ratting is average
 fi

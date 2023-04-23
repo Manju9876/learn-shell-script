@@ -1,5 +1,9 @@
 
-
+if [ -z "$student_details" ]
+then
+  echo -e "\e[36m please enter the name \e[0m"
+  exit
+fi
 student_details=$1
 
 case ${student_details} in
